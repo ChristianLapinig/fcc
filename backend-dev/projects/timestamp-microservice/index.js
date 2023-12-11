@@ -3,15 +3,46 @@ const express = require("express");
 const PORT = process.env.PORT || 8080;
 const app = express();
 
+// HTML routes
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/views/index.html");
 });
 
+app.get("/about", (req, res) => {
+  res.sendFile(__dirname + "/views/about.html");
+});
+
+app.get("/usage", (req, res) => {
+  res.sendFile(__dirname + "/views/usage.html");
+});
+
+// API routes
 app.get("/api", (req, res) => {
   res.json({
     name: "FCC Timestamp Microservice",
-    description:
-      "A microservice that returns a JSON object with a unix timestamp and a natural language date.",
+    description: "A microservice that returns a JSON object with a unix timestamp and a natural language date.",
+  });
+});
+
+app.get("/api/:date", (req, res) => {
+  let date;
+
+  if (isNaN(req.params.date)) {
+    date = new Date(req.params.date);
+  } else {
+    date = new Date(parseInt(req.params.date));
+  }
+
+  if (date.toString() === "Invalid Date") {
+    res.json({ 
+      error: "Invalid Date",
+      value: req.params.date,
+    });
+  }
+
+  res.json({
+    unix: date.getTime(),
+    utc: date.toUTCString(),
   });
 });
 
