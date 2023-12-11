@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 8080;
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.sendFile(__dirname + "/views/index.html");
 });
 
 app.get("/api", (req, res) => {
