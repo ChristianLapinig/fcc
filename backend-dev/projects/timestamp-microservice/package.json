@@ -1,0 +1,24 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "FreeCodeCamp Timestamp Microservice project for backend developement\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristianLapinig/fcc.git"
+  },
+  "keywords": [
+    "fcc",
+    "microservice",
+    "timestamp"
+  ],
+  "author": "Christian Lapinig",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChristianLapinig/fcc/issues"
+  },
+  "homepage": "https://github.com/ChristianLapinig/fcc#readme"
+}
