@@ -2,9 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Home | FCC Timestamp Microservice</title>
+    <title>Home | FCC Timestamp REST API</title>
+    <link rel="stylesheet" href="/public/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Roboto+Mono:wght@100&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>FreeCodeCamp Timestamp Microservice</h1>
+    <main>
+      <h1>Timestamp REST API</h1>
+      <div class="content">
+        <div class="split">
+          <p>
+            This is a simple REST API that returns a JSON object with a unix
+            timestamp and a natural language date.
+          </p>
+          <p>
+            The API accepts a date parameter in the form of a unix timestamp or
+            a natural language date (e.g. January 1, 2016).
+          </p>
+          <p>
+            If the date parameter is invalid, the API returns a JSON object with
+            a null value for both properties.
+          </p>
+        </div>
+        <div class="split">
+          <h2>Usage</h2>
+          <p>GET /api/2022-06-16</p>
+          <p>GET /api/06-16-2022</p>
+          <p>GET /api/1655385600</p>
+        </div>
+        <div class="split code">
+          <code>
+            {
+            <br />
+            &nbsp;&nbsp;"epoch": 1655385600,
+            <br />
+            &nbsp;&nbsp;"natural": "June 16, 2022"
+            <br />
+            }
+          </code>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
