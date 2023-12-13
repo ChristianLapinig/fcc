@@ -5,6 +5,8 @@
 Simple REST API that takes a given date or epoch time and responds with a JSON
 containing the epoch time and the UTC date of the passed request parameters.
 
+Full desciption of the project can be found [here](https://www.freecodecamp.org/learn/back-end-development-and-apis/back-end-development-and-apis-projects/timestamp-microservice)
+
 ## Usage
 
 The following steps will get you setup with the project.
