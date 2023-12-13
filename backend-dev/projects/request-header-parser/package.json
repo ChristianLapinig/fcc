@@ -1,0 +1,35 @@
+{
+  "name": "request-header-parser",
+  "version": "1.0.0",
+  "description": "FreeCodeCamp Backend Development and APIs project - Request Header Parser which... parses request headers",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristianLapinig/fcc.git"
+  },
+  "keywords": [
+    "fcc",
+    "freecodecamp",
+    "backend",
+    "api",
+    "request",
+    "header",
+    "parser"
+  ],
+  "author": "Christian Lapinig",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChristianLapinig/fcc/issues"
+  },
+  "homepage": "https://github.com/ChristianLapinig/fcc#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
