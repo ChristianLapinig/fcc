@@ -9,6 +9,7 @@ const UrlSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
+	// Full shortened url
 	shortUrl: {
 		type: String,
 		required: true,
