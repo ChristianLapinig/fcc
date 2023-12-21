@@ -1,8 +1,4 @@
-const express = require("express");
-
-const router = express.Router();
-
-router.get("/:date", (req, res) => {
+const timestamp = (req, res) => {
   let date;
 
   if (isNaN(req.params.date)) {
@@ -22,6 +18,6 @@ router.get("/:date", (req, res) => {
     unix: date.getTime(),
     utc: date.toUTCString(),
   });
-});
+};
 
-module.exports = router;
+module.exports = timestamp;

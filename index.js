@@ -12,7 +12,8 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-// Backend dev and API routes
+/* Backend dev and API routes */
+// Projects
 app.use("/api", require("./backend-dev/projects/router"));
 
 app.listen(PORT, () => {
