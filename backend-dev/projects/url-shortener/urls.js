@@ -1,14 +1,10 @@
-const express = require("express");
 const ShortUniqueId = require("short-unique-id");
 require("dotenv").config();
 
-const Url = require("../models/Url");
-const { validateUrl } = require("../lib/utils");
+const Url = require("./models/Url");
+const { validateUrl } = require("./lib/utils");
 
-const HOST = process.env.HOST || "http://localhost:8080";
-const router = express.Router();
-
-router.post("/shorten", async (req, res) => {
+const shortenUrl = async (req, res) => {
   // Get the original url from the request body
   const { originalUrl } = req.body;
 
@@ -26,7 +22,6 @@ router.post("/shorten", async (req, res) => {
         url = new Url({
           urlId,
           originalUrl,
-          shortUrl: `${HOST}/${urlId}`,
           date: new Date(),
         });
 
@@ -40,6 +35,6 @@ router.post("/shorten", async (req, res) => {
   } else {
     res.status(400).json("Invalid URL");
   }
-});
+};
 
-module.exports = router;
+module.exports = shortenUrl;
