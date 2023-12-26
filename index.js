@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 });
 
 /* Backend dev and API routes */
-// Pages
+/* Pages and other routes */
 app.get("/url-shortener", (req, res) => {
   res.sendFile(__dirname + "/views/url-shortener.html");
 });
@@ -26,6 +26,8 @@ app.get("/file-metadata", (req, res) => {
 });
 // Rediret to original url when user visits shortened url
 app.get("/:urlId", require("./backend-dev/projects/url-shortener/redirect"));
+
+/* API */
 app.use("/api", require("./backend-dev/projects/router")); // Projects
 
 app.listen(PORT, () => {
