@@ -7,7 +7,7 @@ is shortened to `http://host:port/<unique-identifier>`.
 
 Full desciption of the project can be found [here](https://www.freecodecamp.org/learn/back-end-development-and-apis/back-end-development-and-apis-projects/url-shortener-microservice).
 
-# Setup
+## Setup
 
 In your `.env` file, set the `MONGO_URI` variable to your MongoDB Atlas link. Below
 is an example of the URI that should be used.
