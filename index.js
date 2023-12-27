@@ -10,6 +10,7 @@ connectDB();
 // Configure express
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use("/public", express.static("public")); // Serve static assets
 
 /* Pages and other routes */
 app.get("/url-shortener", (req, res) => {
