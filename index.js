@@ -22,7 +22,9 @@ app.get("/file-metadata", (req, res) => {
 app.get("/:urlId", require("./backend-dev/projects/url-shortener/redirect"));
 
 /* Backend dev curriculum */
-app.use("/", require("./backend-dev/curriculum/router"));
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/views/index.html");
+});
 
 /* backend dev API and projects */
 app.use("/api", require("./backend-dev/projects/router")); // Projects
