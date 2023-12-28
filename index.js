@@ -26,6 +26,11 @@ app.get("/:urlId", require("./backend-dev/projects/url-shortener/redirect"));
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/views/index.html");
 });
+app.get("/hello/json", (req, res) => {
+  res.json({
+    message: "Hello json",
+  });
+});
 
 /* backend dev API and projects */
 app.use("/api", require("./backend-dev/projects/router")); // Projects
