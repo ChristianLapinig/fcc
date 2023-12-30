@@ -13,6 +13,7 @@ connectDB();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use("/public", express.static("public")); // Serve static assets
+app.use(require("./backend-dev/curriculum/logger")); // Logger middleware
 
 /* Pages and other routes */
 app.get("/url-shortener", (req, res) => {
