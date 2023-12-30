@@ -2,6 +2,8 @@ const express = require("express");
 const connectDB = require("./config/db");
 
 const PORT = process.env.PORT || 8080;
+const MESSAGE_STYLE = process.env.MESSAGE_STYLE;
+const MESSAGE = "Hello json";
 const app = express();
 
 // Mongo connection for projects and curriculum that require it
@@ -28,7 +30,7 @@ app.get("/", (req, res) => {
 });
 app.get("/hello/json", (req, res) => {
   res.json({
-    message: "Hello json",
+    message: MESSAGE_STYLE == "uppercase" ? MESSAGE.toUpperCase() : MESSAGE,
   });
 });
 
