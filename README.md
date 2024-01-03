@@ -55,6 +55,9 @@ Usage documentation to the curriculum and projects can be found below.
 
 ### Backend Development and APIs
 
+#### Curriculum
+- (Chain Middleware to Create a Time Server)[https://github.com/ChristianLapinig/fcc/tree/backend-dev/curriculum/chain-middleware/backend-dev/curriculum]
+
 #### Projects
 
 1. [Timestamp Microservice](https://github.com/ChristianLapinig/fcc/tree/master/backend-dev/projects/timestamp-microservice)
