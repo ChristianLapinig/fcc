@@ -5,6 +5,17 @@
 This repository contains my projects and finished curriculum for all of the
 FreeCodeCamp material. This repository is meant to be for educational purposes.
 
+PLEASE NOTE: This repository is meant for educational purposes and acts as a guide for
+the challenges and projects in FreeCodeCamp and not as a direct submission. Most projects
+and challenges will fail due to the way the code for this repository is setup. For example,
+the projects for "Backend Development and APIs" section will not pass as they test
+for specific routes to be called. The expectation from FreeCodeCamp is that your submissions 
+should be separate projects compared to here where everything is in one place. 
+
+To see the answer for the curriculum and projects, branches dedicated to each solution
+have been created and have a structure similar to this, `backend-dev/projects/file-metadata`
+or `backend-dev/curriculum/chain-middleware`.
+
 ## Installation
 
 You can follow the steps below to install and run the code:
