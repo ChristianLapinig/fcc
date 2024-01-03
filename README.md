@@ -56,6 +56,7 @@ Usage documentation to the curriculum and projects can be found below.
 ### Backend Development and APIs
 
 #### Curriculum
+- [Serve an HTML File](https://github.com/ChristianLapinig/fcc/tree/backend-dev/curriculum/serve-html/backend-dev/curriculum)
 - [Chain Middleware to Create a Time Server](https://github.com/ChristianLapinig/fcc/tree/backend-dev/curriculum/chain-middleware/backend-dev/curriculum)
 
 #### Projects
