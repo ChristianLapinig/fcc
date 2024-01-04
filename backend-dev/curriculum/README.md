@@ -16,4 +16,4 @@ app.use("/public", express.static("public")); // Serve static assets
 ``` 
 Anything in the public folder is now accessible via `http://host:port/public/path/to/asset`.
 An example of this would be `http://localhost:8080/public/styles/styles.css`. Here,
-The contents of `styles.css` would be displayed in the browser.
+the contents of `styles.css` would be displayed in the browser.
