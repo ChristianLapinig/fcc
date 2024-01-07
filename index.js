@@ -22,17 +22,8 @@ app.get("/file-metadata", (req, res) => {
 // Rediret to original url when user visits shortened url
 app.get("/:urlId", require("./backend-dev/projects/url-shortener/redirect"));
 
-/* Backend dev curriculum */
-app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/views/index.html");
-});
-app.get("/hello/json", (req, res) => {
-  res.json({
-    message: "Hello json",
-  });
-});
-
-/* backend dev API and projects */
+/* backend dev API curriculum and projects */
+app.use("/", require("./backend-dev/curriculum/router")); // Curriculum
 app.use("/api", require("./backend-dev/projects/router")); // Projects
 
 app.listen(PORT, () => {
