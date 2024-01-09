@@ -59,6 +59,7 @@ Usage documentation to the curriculum and projects can be found below.
 - [Serve an HTML File](https://github.com/ChristianLapinig/fcc/tree/backend-dev/curriculum/serve-html/backend-dev/curriculum)
 - [Serve Static Assets](https://github.com/ChristianLapinig/fcc/tree/backend-dev/curriculum/serve-static-assets/backend-dev/curriculum)
 - [Serve JSON on a Specific Route](https://github.com/ChristianLapinig/fcc/tree/backend-dev/curriculum/serve-json/backend-dev/curriculum)
+- [Use the `.env` File](https://github.com/ChristianLapinig/fcc/tree/backend-dev/curriculum/dot-env-files/backend-dev/curriculum)
 - [Chain Middleware to Create a Time Server](https://github.com/ChristianLapinig/fcc/tree/backend-dev/curriculum/chain-middleware/backend-dev/curriculum)
 
 #### Projects
