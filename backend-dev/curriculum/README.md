@@ -6,6 +6,7 @@ NOTE: You might have to install an NPM package named `dotenv`. You can install t
 package using `npm install --save-dev dotenv` and including it in your code:
 
 ```javascript
+// Example
 const express = require('express');
 require('dotenv').config();
 ```
