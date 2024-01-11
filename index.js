@@ -2,8 +2,6 @@ const express = require("express");
 const connectDB = require("./config/db");
 
 const PORT = process.env.PORT || 8080;
-const MESSAGE_STYLE = process.env.MESSAGE_STYLE;
-const MESSAGE = "Hello json";
 const app = express();
 
 // Mongo connection for projects and curriculum that require it
@@ -25,17 +23,8 @@ app.get("/file-metadata", (req, res) => {
 // Rediret to original url when user visits shortened url
 app.get("/:urlId", require("./backend-dev/projects/url-shortener/redirect"));
 
-/* Backend dev curriculum */
-app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/views/index.html");
-});
-app.get("/hello/json", (req, res) => {
-  res.json({
-    message: MESSAGE_STYLE == "uppercase" ? MESSAGE.toUpperCase() : MESSAGE,
-  });
-});
-
-/* backend dev API and projects */
+/* backend dev API curriculum and projects */
+app.use("/", require("./backend-dev/curriculum/router")); // Curriculum
 app.use("/api", require("./backend-dev/projects/router")); // Projects
 
 app.listen(PORT, () => {
