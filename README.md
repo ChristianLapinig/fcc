@@ -3,7 +3,7 @@
 ## Overview
 
 This repository contains my projects and finished curriculum for all of the
-FreeCodeCamp material.
+FreeCodeCamp material. This repository is meant to be for educational purposes.
 
 PLEASE NOTE: This repository is meant for educational purposes and acts as a guide for
 the challenges and projects in FreeCodeCamp and not as a direct submission. Most projects
@@ -54,6 +54,14 @@ $ npm run dev
 Usage documentation to the curriculum and projects can be found below.
 
 ### Backend Development and APIs
+
+#### Curriculum
+- [Serve an HTML File](https://github.com/ChristianLapinig/fcc/tree/backend-dev/curriculum/serve-html/backend-dev/curriculum)
+- [Serve Static Assets](https://github.com/ChristianLapinig/fcc/tree/backend-dev/curriculum/serve-static-assets/backend-dev/curriculum)
+- [Serve JSON on a Specific Route](https://github.com/ChristianLapinig/fcc/tree/backend-dev/curriculum/serve-json/backend-dev/curriculum)
+- [Use the `.env` File](https://github.com/ChristianLapinig/fcc/tree/backend-dev/curriculum/dot-env-files/backend-dev/curriculum)
+- [Implement a Root-Level Request Logger Middleware](https://github.com/ChristianLapinig/fcc/tree/backend-dev/curriculum/logger-middleware/backend-dev/curriculum)
+- [Chain Middleware to Create a Time Server](https://github.com/ChristianLapinig/fcc/tree/backend-dev/curriculum/chain-middleware/backend-dev/curriculum)
 
 #### Projects
 
