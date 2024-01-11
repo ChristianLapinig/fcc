@@ -1,12 +1,7 @@
-# Use the `.env` File 
+# Implement a Root-Level Request Logger Middleware 
 
-The description for this challenge and how to use the `.env` file can be found [here](https://www.freecodecamp.org/learn/back-end-development-and-apis/basic-node-and-express/use-the--env-file).
+The description for this challenge and how to root level middleware can be found [here](https://www.freecodecamp.org/learn/back-end-development-and-apis/basic-node-and-express/implement-a-root-level-request-logger-middleware).
 
-NOTE: You might have to install an NPM package named `dotenv`. You can install this
-package using `npm install --save-dev dotenv` and including it in your code:
-
-```javascript
-// Example
-const express = require('express');
-require('dotenv').config();
-```
+# Usage
+Visiting any of the routes in previous challenges will generate a request log in your
+terminal. For example, a request to `/hello/json` is logged as `GET /hello/json - ::1`.
