@@ -6,7 +6,6 @@ const MESSAGE_STYLE = process.env.MESSAGE_STYLE;
 const MESSAGE = "Hello json";
 const router = express.Router();
 
-
 // Serve an HTML file 
 router.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../../views/index.html"));
