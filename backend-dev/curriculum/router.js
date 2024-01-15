@@ -27,4 +27,9 @@ router.get("/chain-middleware/now", (req, res, next) => {
   res.json({ time: req.time });
 });
 
+// Get Route Parameter Input from the Client
+router.get("/:word/echo", (req, res) => {
+  res.json({ echo: req.params.word });
+});
+
 module.exports = router;
