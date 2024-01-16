@@ -62,6 +62,7 @@ Usage documentation to the curriculum and projects can be found below.
 - [Use the `.env` File](https://github.com/ChristianLapinig/fcc/tree/backend-dev/curriculum/dot-env-files/backend-dev/curriculum)
 - [Implement a Root-Level Request Logger Middleware](https://github.com/ChristianLapinig/fcc/tree/backend-dev/curriculum/logger-middleware/backend-dev/curriculum)
 - [Chain Middleware to Create a Time Server](https://github.com/ChristianLapinig/fcc/tree/backend-dev/curriculum/chain-middleware/backend-dev/curriculum)
+- [Get Route Parameter Input from the Client](https://github.com/ChristianLapinig/fcc/tree/backend-dev/curriculum/route-parameters/backend-dev/curriculum)
 
 #### Projects
 
